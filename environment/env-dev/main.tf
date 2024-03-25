@@ -23,5 +23,5 @@ module "eks-cluster" {
   pubsn_web_az1_id = module.networking.pubsn_web_az1_id
   pubsn_web_az2_id = module.networking.pubsn_web_az2_id
   privsn_app_az1_id = module.networking.privsn_app_az1_id
-  privsn_app_az2_id = module.vnetworking.privsn_app_az2_id
+  privsn_app_az2_id = module.networking.privsn_app_az2_id
 }
