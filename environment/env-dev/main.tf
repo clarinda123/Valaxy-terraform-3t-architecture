@@ -20,8 +20,8 @@ module "networking" {
 module "eks-cluster" {
   source = "./modules/eks-cluster"
   project_name = var.project_name
-  pubsn_web_az1_cidr = var.pubsn_web_az1_cidr
-  pubsn_web_az2_cidr = var.pubsn_web_az2_cidr
-  privsn_app_az1_cidr = var.privsn_app_az1_cidr
-  privsn_app_az2_cidr = var.privsn_app_az2_cidr
+  pubsn_web_az1_id = module.networking.pubsn_web_az1_id
+  pubsn_web_az2_id = module.networking.pubsn_web_az2_id
+  privsn_app_az1_id = module.networking.privsn_app_az1_id
+  privsn_app_az2_id = module.vnetworking.privsn_app_az2_id
 }
