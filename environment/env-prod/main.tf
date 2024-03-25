@@ -16,3 +16,12 @@ module "networking" {
   privsn_db_az1_cidr = var.privsn_db_az1_cidr
   privsn_db_az2_cidr = var.privsn_db_az2_cidr
 }
+
+module "eks-cluster" {
+  source = "./modules/eks-cluster"
+  project_name = var.project_name
+  pubsn_web_az1_cidr = var.pubsn_web_az1_cidr
+  pubsn_web_az2_cidr = var.pubsn_web_az2_cidr
+  privsn_app_az1_cidr = var.privsn_app_az1_cidr
+  privsn_app_az2_cidr = var.privsn_app_az2_cidr
+}
