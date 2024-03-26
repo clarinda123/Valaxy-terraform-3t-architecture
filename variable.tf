@@ -68,6 +68,12 @@ variable "privsn_db_az2_cidr" {
   description = "The cidr block for private database subnet az2"
 }
 
+variable "desired_size" {}
+variable "min_size" {}
+variable "max_size" {}
+variable "instance_types" {}
+variable "max_unavailable" {}
+
 
 
 

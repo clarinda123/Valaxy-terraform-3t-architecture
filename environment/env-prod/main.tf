@@ -24,4 +24,9 @@ module "eks-cluster" {
   pubsn_web_az2_cidr = var.pubsn_web_az2_cidr
   privsn_app_az1_cidr = var.privsn_app_az1_cidr
   privsn_app_az2_cidr = var.privsn_app_az2_cidr
+  desired_size = var.desired_size
+  min_size = var.min_size
+  max_size = var.max_size
+  instance_types = var.instance_types
+  max_unavailable = var.max_unavailable
 }
